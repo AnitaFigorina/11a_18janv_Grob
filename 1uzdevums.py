@@ -1,4 +1,4 @@
-def lasit_un_drukaz(teksta_fails):
+def lasit_un_druka(teksta_fails):
     try:
         with open(teksta_fails, 'r', encoding='utf-8') as fails:
             saturs = fails.read()
@@ -10,4 +10,4 @@ def lasit_un_drukaz(teksta_fails):
         print(f"Radās kļūda: {e}")
 
 mans_fails = 'teksts.txt'
-lasit_un_drukaz(mans_fails)
+lasit_un_druka(mans_fails)
