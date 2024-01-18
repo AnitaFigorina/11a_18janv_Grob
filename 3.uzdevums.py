@@ -14,7 +14,7 @@ def tikai_treso_rindu(texta_fails):
         print(f"Radās kļūda: {i}")
 
 
-mans_fails = 'teksts.txt'
+abeces_fails = 'teksts.txt'
 
 
-tikai_treso_rindu(mans_fails)
+tikai_treso_rindu(abeces_fails)
