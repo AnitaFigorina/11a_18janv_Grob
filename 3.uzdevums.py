@@ -1,12 +1,20 @@
-def tresa_rinda (teksts):
+def tikai_treso_rindu(texta_fails):
     try:
-      with open('fails', "r", encoding='utf-8')as f:
-        rindas=f.readlines()
-      if len(rindas) >=3:
-        rinda=rindas[2].strip()
-        print("Trešās rindas saturs!")
-        print(rinda)
-      else:
-        print("Nav pieteikami daudz rindu!")
+        with open(texta_fails, 'r', encoding='utf-8') as abece:
+            rindas = abece.readlines()
+            if len(rindas) >= 3:
+                tresa_rinda = rindas[2]
+                print("Trešajā rindā ir teikts: ")
+                print(tresa_rinda)
+            else:
+                print("Failā nav TIK daudz rindu.")
     except FileNotFoundError:
-        print(f"Fails {teksts}nav atrasts!")
+        print(f"Fails ar nosaukumu '{texta_fails}' nav ticis atrasts.")
+    except Exception as i:
+        print(f"Radās kļūda: {i}")
+
+
+mans_fails = 'teksts.txt'
+
+
+tikai_treso_rindu(mans_fails)
