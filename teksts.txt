@@ -1,0 +1,3 @@
+Sveiki! Kāda ir tava diena?
+Vai tu esi pāēdis un izgulējies?
+Šis ir fails uzdevumam.
